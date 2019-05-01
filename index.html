@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./JS/board.js"></script>
+    <script src="./JS/dice.js"></script>
+    <script src="./JS/player.js"></script>
+    <title>Serpientes y escaleras</title>
+    <style>
+      html{
+          background: greenyellow;
+        }
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+      }
+
+      .booty{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        background: crimson;
+        height: 20px;
+        border: 0;
+        color: white;
+        font-size: 16px;
+        display: block;
+        cursor: pointer;
+        outline: none;
+        border-radius: 2px;
+        box-shadow: 2px 2px 0px 0px blue;
+        margin-bottom: 5px;
+        margin-top: 2px;
+      }
+
+      .booty:active{
+          background: fuchsia;
+          color: lime;
+        }
+
+      .players{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          width: 47.5%;
+          height: auto;
+          background: blueviolet;
+          color: white;
+          box-shadow: 2px 2px 0px 0px blue;
+          border-radius: 2px;
+          padding: 10px;
+          visibility: hidden;
+      }
+
+    </style>
+</head>
+<body>
+    <img src="seact.jpg" alt="Tablero del juego" height="500" width="500" class="center">
+      <button class="booty" id="stGame">Re/Start Game</button>
+      <button class="booty" id="ptGame">Play Turn</button>
+    <div class="players">
+    </div>
+
+    <script src="./JS/game.js"></script>
+</body>
+</html>
